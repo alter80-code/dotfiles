@@ -1,0 +1,54 @@
+## Key bindings
+
+### w3m
+
+ESC - m  --> show links
+ctrl + ins --> show menu
+shift + h --> history
+shift + b --> back
+
+/ --> search forward
+? --> search backward
+
+### dwm 
+
+alt + shift +enter --> open terminal
+alt + j / k --> left / right
+ctrl + shift + pagup / pagdown --> zoom in / out in ST
+alt + h / l --> enlarge left / right
+alt + p --> open d
+alt + n --> open desk 1,2,3
+alt + shift + n -->  move current to desk 1,2,3
+shift + mod + c --> kill active
+shift + mod + q --> logout dwm
+alt + t --> tiled
+alt +f --> floating
+alt + m --> monocle
+alt + rmb --> resize
+alt + lmb --> move
+alt + space --> previos layout 
+
+### qutebrowser
+
+ctrl + h --> history
+shift + t --> open a tab
+shift + altgr + { --> move tab left
+shift + altgr + } --> move tab right
+ctrl + q --> close tab
+shift + i --> view image
+c --> show url
+esc + a --> to bookmarks
+esc + b --> show bookmarks
+n --> next search
+o --> go to page
+O --> go to page in new tab
++ / - --> zoom in / out
+J / K or alt + n --> switch to tab left / right or 1, 2 
+d --> close tab 
+u --> undo close
+H / L --> back and forth in history
+yy --> copy current url
+pp --> paste 
+:adblock-update --> download and update adblock
+:open www --> open the page
+:help --> help
