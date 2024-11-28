@@ -5,7 +5,8 @@ local config = {}
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
-config.color_scheme = "Catppuccin Macchiato"
+-- config.color_scheme = "Catppuccin Macchiato"
+config.window_background_opacity = 0.8
 config.font = wezterm.font("Hack Nerd Font Mono")
 config.font_size = 14
 config.window_decorations = "RESIZE"
@@ -44,13 +45,13 @@ config.keys = {
     action = wezterm.action.ActivateTabRelative(1),
   },
   {
-    mods = "LEADER",
-    key = "à",
+    mods = "LEADER|SHIFT",
+    key = "°",
     action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },
   },
   {
-    mods = "LEADER",
-    key = "ò",
+    mods = "LEADER|SHIFT",
+    key = "ç",
     action = wezterm.action.SplitVertical { domain = "CurrentPaneDomain" },
   },
   {
@@ -119,6 +120,11 @@ config.keys = {
     mods = "CTRL",
     action = wezterm.action.CopyMode("MoveForwardWord"),
   },
+{ key = "RightAlt", mods = "NONE", action = wezterm.action.DisableDefaultAssignment },
+
+    -- Mappatura personalizzata per AltGr (se necessario)
+
+    { key = "RightAlt", mods = "NONE", action = wezterm.action.SendKey{ key="AltGr" } },
 }
 
 for i = 0, 9 do
